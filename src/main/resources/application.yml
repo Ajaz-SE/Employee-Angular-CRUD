@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:file:C:/Users/10020288/OneDrive - ERGO Group AG/Desktop/Boot and Angular/Employee-Angular-DB/Sample
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+     
+  jpa:
+    spring.jpa.database-platform: org.hibernate.Dialect.H2Dialect 
+    hibernate:
+      ddl-auto: update
+    show-sql: true 
+    properties:
+      hibernate.format_sql: true
+    
+  h2:
+    console:
+      enabled: true
